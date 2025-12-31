@@ -28,63 +28,112 @@
   
   <!-- Structured Data (JSON-LD) for SEO -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Hotel",
-      "name": "Balaji Grand Hotel",
-      "image": "https://raw.githubusercontent.com/bongchong-in/balajigrandhotel/refs/heads/main/images/20240630_091817-1024x825.jpg",
-      "url": "https://balajigrandhotel.in/",
-      "telephone": "+919777035111",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "K8/110, Kalinga Nagar, Near SUM Hospital",
-        "addressLocality": "Bhubaneswar",
-        "postalCode": "751003",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 20.2798726,
-        "longitude": 85.7643065
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "priceRange": "₹999 - ₹2500",
-      "amenityFeature": [
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Free Wi-Fi",
-          "value": "True"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Hotel",
+        "name": "Balaji Grand Hotel",
+        "image": "https://raw.githubusercontent.com/bongchong-in/balajigrandhotel/refs/heads/main/images/20240630_091817-1024x825.jpg",
+        "url": "https://balajigrandhotel.in/",
+        "telephone": "+919777035111",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "K8/110, Kalinga Nagar, Near SUM Hospital",
+          "addressLocality": "Bhubaneswar",
+          "postalCode": "751003",
+          "addressCountry": "IN"
         },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "AC Rooms",
-          "value": "True"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 20.2798726,
+          "longitude": 85.7643065
         },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "24-hour Check-out",
-          "value": "True"
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
         },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Parking",
-          "value": "True"
+        "priceRange": "₹999 - ₹2500",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "124",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Free Wi-Fi",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "AC Rooms",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "24-hour Check-out",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Parking",
+            "value": "True"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "AC Double Room Nightly Stay",
+        "image": "https://balajigrandhotel.in/wp-content/uploads/2024/07/IMG-20240710-WA0007.jpg",
+        "description": "Stay in a comfortable AC Double Room at Balaji Grand Hotel. Perfect for couples or business travelers. Includes Free Wi-Fi, Wakefit Mattress, and 24-hour checkout flexibility.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Balaji Grand Hotel"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://balajigrandhotel.in/#rooms",
+          "priceCurrency": "INR",
+          "price": "999",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition"
         }
-      ]
-    }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "AC Twin Room Nightly Stay",
+        "image": "https://raw.githubusercontent.com/bongchong-in/balajigrandhotel/main/images/IMG-20240710-WA0023.jpg",
+        "description": "Stay in a comfortable AC Twin Room at Balaji Grand Hotel. Ideal for friends or colleagues. Includes Free Wi-Fi, Separate Beds, and 24-hour checkout flexibility.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Balaji Grand Hotel"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://balajigrandhotel.in/#rooms",
+          "priceCurrency": "INR",
+          "price": "999",
+          "priceValidUntil": "2025-12-31",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      }
+    ]
   </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
